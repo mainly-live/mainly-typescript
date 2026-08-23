@@ -1,0 +1,396 @@
+{
+    "name": "@mainly-live/sdk",
+    "version": "0.0.0",
+    "private": false,
+    "type": "commonjs",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.mjs",
+    "types": "./dist/cjs/index.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/esm/index.d.mts",
+                "default": "./dist/esm/index.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/index.d.ts",
+                "default": "./dist/cjs/index.js"
+            },
+            "default": "./dist/cjs/index.js"
+        },
+        "./ethereum": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereum/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereum/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereum/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereum/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereum/exports.js"
+        },
+        "./ethereum/wallets": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereum/resources/wallets/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereum/resources/wallets/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereum/resources/wallets/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereum/resources/wallets/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereum/resources/wallets/exports.js"
+        },
+        "./ethereum/accounts": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereum/resources/accounts/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereum/resources/accounts/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereum/resources/accounts/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereum/resources/accounts/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereum/resources/accounts/exports.js"
+        },
+        "./ethereum/tokens": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereum/resources/tokens/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereum/resources/tokens/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereum/resources/tokens/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereum/resources/tokens/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereum/resources/tokens/exports.js"
+        },
+        "./ethereum/transactions": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereum/resources/transactions/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereum/resources/transactions/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereum/resources/transactions/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereum/resources/transactions/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereum/resources/transactions/exports.js"
+        },
+        "./ethereum/network": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereum/resources/network/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereum/resources/network/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereum/resources/network/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereum/resources/network/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereum/resources/network/exports.js"
+        },
+        "./ethereumSepolia": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereumSepolia/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereumSepolia/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereumSepolia/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereumSepolia/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereumSepolia/exports.js"
+        },
+        "./ethereumSepolia/wallets": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereumSepolia/resources/wallets/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereumSepolia/resources/wallets/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereumSepolia/resources/wallets/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereumSepolia/resources/wallets/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereumSepolia/resources/wallets/exports.js"
+        },
+        "./ethereumSepolia/accounts": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereumSepolia/resources/accounts/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereumSepolia/resources/accounts/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereumSepolia/resources/accounts/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereumSepolia/resources/accounts/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereumSepolia/resources/accounts/exports.js"
+        },
+        "./ethereumSepolia/tokens": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereumSepolia/resources/tokens/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereumSepolia/resources/tokens/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereumSepolia/resources/tokens/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereumSepolia/resources/tokens/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereumSepolia/resources/tokens/exports.js"
+        },
+        "./ethereumSepolia/transactions": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereumSepolia/resources/transactions/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereumSepolia/resources/transactions/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereumSepolia/resources/transactions/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereumSepolia/resources/transactions/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereumSepolia/resources/transactions/exports.js"
+        },
+        "./ethereumSepolia/network": {
+            "import": {
+                "types": "./dist/esm/api/resources/ethereumSepolia/resources/network/exports.d.mts",
+                "default": "./dist/esm/api/resources/ethereumSepolia/resources/network/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/ethereumSepolia/resources/network/exports.d.ts",
+                "default": "./dist/cjs/api/resources/ethereumSepolia/resources/network/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/ethereumSepolia/resources/network/exports.js"
+        },
+        "./solana": {
+            "import": {
+                "types": "./dist/esm/api/resources/solana/exports.d.mts",
+                "default": "./dist/esm/api/resources/solana/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solana/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solana/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solana/exports.js"
+        },
+        "./solana/wallets": {
+            "import": {
+                "types": "./dist/esm/api/resources/solana/resources/wallets/exports.d.mts",
+                "default": "./dist/esm/api/resources/solana/resources/wallets/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solana/resources/wallets/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solana/resources/wallets/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solana/resources/wallets/exports.js"
+        },
+        "./solana/transactions": {
+            "import": {
+                "types": "./dist/esm/api/resources/solana/resources/transactions/exports.d.mts",
+                "default": "./dist/esm/api/resources/solana/resources/transactions/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solana/resources/transactions/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solana/resources/transactions/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solana/resources/transactions/exports.js"
+        },
+        "./solana/tokens": {
+            "import": {
+                "types": "./dist/esm/api/resources/solana/resources/tokens/exports.d.mts",
+                "default": "./dist/esm/api/resources/solana/resources/tokens/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solana/resources/tokens/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solana/resources/tokens/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solana/resources/tokens/exports.js"
+        },
+        "./solana/nfts": {
+            "import": {
+                "types": "./dist/esm/api/resources/solana/resources/nfts/exports.d.mts",
+                "default": "./dist/esm/api/resources/solana/resources/nfts/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solana/resources/nfts/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solana/resources/nfts/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solana/resources/nfts/exports.js"
+        },
+        "./solana/collections": {
+            "import": {
+                "types": "./dist/esm/api/resources/solana/resources/collections/exports.d.mts",
+                "default": "./dist/esm/api/resources/solana/resources/collections/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solana/resources/collections/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solana/resources/collections/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solana/resources/collections/exports.js"
+        },
+        "./solana/programs": {
+            "import": {
+                "types": "./dist/esm/api/resources/solana/resources/programs/exports.d.mts",
+                "default": "./dist/esm/api/resources/solana/resources/programs/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solana/resources/programs/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solana/resources/programs/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solana/resources/programs/exports.js"
+        },
+        "./solana/accounts": {
+            "import": {
+                "types": "./dist/esm/api/resources/solana/resources/accounts/exports.d.mts",
+                "default": "./dist/esm/api/resources/solana/resources/accounts/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solana/resources/accounts/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solana/resources/accounts/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solana/resources/accounts/exports.js"
+        },
+        "./solana/network": {
+            "import": {
+                "types": "./dist/esm/api/resources/solana/resources/network/exports.d.mts",
+                "default": "./dist/esm/api/resources/solana/resources/network/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solana/resources/network/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solana/resources/network/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solana/resources/network/exports.js"
+        },
+        "./solanaDevnet": {
+            "import": {
+                "types": "./dist/esm/api/resources/solanaDevnet/exports.d.mts",
+                "default": "./dist/esm/api/resources/solanaDevnet/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solanaDevnet/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solanaDevnet/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solanaDevnet/exports.js"
+        },
+        "./solanaDevnet/wallets": {
+            "import": {
+                "types": "./dist/esm/api/resources/solanaDevnet/resources/wallets/exports.d.mts",
+                "default": "./dist/esm/api/resources/solanaDevnet/resources/wallets/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solanaDevnet/resources/wallets/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solanaDevnet/resources/wallets/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solanaDevnet/resources/wallets/exports.js"
+        },
+        "./solanaDevnet/transactions": {
+            "import": {
+                "types": "./dist/esm/api/resources/solanaDevnet/resources/transactions/exports.d.mts",
+                "default": "./dist/esm/api/resources/solanaDevnet/resources/transactions/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solanaDevnet/resources/transactions/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solanaDevnet/resources/transactions/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solanaDevnet/resources/transactions/exports.js"
+        },
+        "./solanaDevnet/tokens": {
+            "import": {
+                "types": "./dist/esm/api/resources/solanaDevnet/resources/tokens/exports.d.mts",
+                "default": "./dist/esm/api/resources/solanaDevnet/resources/tokens/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solanaDevnet/resources/tokens/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solanaDevnet/resources/tokens/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solanaDevnet/resources/tokens/exports.js"
+        },
+        "./solanaDevnet/nfts": {
+            "import": {
+                "types": "./dist/esm/api/resources/solanaDevnet/resources/nfts/exports.d.mts",
+                "default": "./dist/esm/api/resources/solanaDevnet/resources/nfts/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solanaDevnet/resources/nfts/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solanaDevnet/resources/nfts/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solanaDevnet/resources/nfts/exports.js"
+        },
+        "./solanaDevnet/collections": {
+            "import": {
+                "types": "./dist/esm/api/resources/solanaDevnet/resources/collections/exports.d.mts",
+                "default": "./dist/esm/api/resources/solanaDevnet/resources/collections/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solanaDevnet/resources/collections/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solanaDevnet/resources/collections/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solanaDevnet/resources/collections/exports.js"
+        },
+        "./solanaDevnet/programs": {
+            "import": {
+                "types": "./dist/esm/api/resources/solanaDevnet/resources/programs/exports.d.mts",
+                "default": "./dist/esm/api/resources/solanaDevnet/resources/programs/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solanaDevnet/resources/programs/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solanaDevnet/resources/programs/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solanaDevnet/resources/programs/exports.js"
+        },
+        "./solanaDevnet/accounts": {
+            "import": {
+                "types": "./dist/esm/api/resources/solanaDevnet/resources/accounts/exports.d.mts",
+                "default": "./dist/esm/api/resources/solanaDevnet/resources/accounts/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solanaDevnet/resources/accounts/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solanaDevnet/resources/accounts/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solanaDevnet/resources/accounts/exports.js"
+        },
+        "./solanaDevnet/network": {
+            "import": {
+                "types": "./dist/esm/api/resources/solanaDevnet/resources/network/exports.d.mts",
+                "default": "./dist/esm/api/resources/solanaDevnet/resources/network/exports.mjs"
+            },
+            "require": {
+                "types": "./dist/cjs/api/resources/solanaDevnet/resources/network/exports.d.ts",
+                "default": "./dist/cjs/api/resources/solanaDevnet/resources/network/exports.js"
+            },
+            "default": "./dist/cjs/api/resources/solanaDevnet/resources/network/exports.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "reference.md",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "format": "biome format --write --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+        "format:check": "biome format --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+        "lint": "biome lint --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+        "lint:fix": "biome lint --fix --unsafe --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+        "check": "biome check --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+        "check:fix": "biome check --fix --unsafe --skip-parse-errors --no-errors-on-unmatched --max-diagnostics=none",
+        "build": "pnpm build:cjs && pnpm build:esm",
+        "build:cjs": "tsc --project ./tsconfig.cjs.json",
+        "build:esm": "tsc --project ./tsconfig.esm.json && node scripts/rename-to-esm-files.js dist/esm",
+        "test": "vitest",
+        "test:unit": "vitest --project unit",
+        "test:wire": "vitest --project wire"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "webpack": "^5.105.4",
+        "ts-loader": "^9.5.4",
+        "vitest": "^4.1.1",
+        "msw": "2.11.2",
+        "@types/node": "^20.0.0",
+        "typescript": "~5.9.3",
+        "@biomejs/biome": "2.4.10"
+    },
+    "browser": {
+        "fs": false,
+        "os": false,
+        "path": false,
+        "stream": false,
+        "crypto": false
+    },
+    "packageManager": "pnpm@10.33.0",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "sideEffects": false,
+    "description": "Official TypeScript SDK for the Mainly API"
+}
