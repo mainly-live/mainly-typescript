@@ -14,10 +14,10 @@
         "generateSubpackageExports": true,
         "maxRetries": 3
     },
-    "originGitCommit": "4d73922d711660495fbe9eac3f344217f317036a",
+    "originGitCommit": "2f2af27f017e8ccfdb06db71afd6ed3c183842e6",
     "originGitCommitIsDirty": false,
     "invokedBy": "ci",
-    "requestedVersion": "0.1.0",
+    "requestedVersion": "0.1.1",
     "ciProvider": "github",
-    "sdkVersion": "0.1.0"
+    "sdkVersion": "0.1.1"
 }
