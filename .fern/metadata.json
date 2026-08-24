@@ -3,10 +3,7 @@
     "generatorName": "fernapi/fern-typescript-sdk",
     "generatorVersion": "3.88.1",
     "generatorConfig": {
-        "packageJson": {
-            "name": "@mainly-live/sdk",
-            "description": "Official TypeScript SDK for the Mainly API"
-        },
+        "namespaceExport": "Mainly",
         "naming": {
             "namespace": "Mainly",
             "client": "Mainly",
@@ -17,9 +14,10 @@
         "generateSubpackageExports": true,
         "maxRetries": 3
     },
-    "originGitCommit": "24b9ee8efb36c1175414bbac353d00dc404d3e10",
-    "originGitCommitIsDirty": true,
-    "invokedBy": "manual",
-    "requestedVersion": "0.0.0",
-    "sdkVersion": "0.0.0"
+    "originGitCommit": "4d73922d711660495fbe9eac3f344217f317036a",
+    "originGitCommitIsDirty": false,
+    "invokedBy": "ci",
+    "requestedVersion": "0.1.0",
+    "ciProvider": "github",
+    "sdkVersion": "0.1.0"
 }
